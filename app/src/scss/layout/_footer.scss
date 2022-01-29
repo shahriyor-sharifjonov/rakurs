@@ -1,0 +1,30 @@
+.footer{
+    &__logo{
+        margin-bottom: 17px;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 16px;
+        color: #333333;
+        margin-bottom: 45px;
+    }
+    &__list{
+        list-style-type: none;
+    }
+    &__li{
+        font-size: 16px;
+        line-height: 16px;
+        color: #828282;        
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+    }
+    &__p{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        text-decoration-line: underline;
+        color: #FC5C12;
+    }
+}
