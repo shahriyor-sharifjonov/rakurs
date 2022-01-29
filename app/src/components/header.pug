@@ -19,7 +19,9 @@ mixin header()
                     img(src="images/profile.svg", alt="" draggable="false").mr-2
                     | Войти
                 a(href="#!").header__card.d-flex.align-items-center.border-primary.brad-10.mb-lg-0.mb-5 
-                    img(src="images/card.svg", alt="").mr-3
+                    .header__card-img.mr-3
+                        img(src="images/card.svg", alt="")
+                        .badge.badge-danger 10
                     .header__card-content.d-flex.flex-column
                         small.fw-300.text-secondary Корзина 
                         p.fw-600.text-secondary 1 032 ₽

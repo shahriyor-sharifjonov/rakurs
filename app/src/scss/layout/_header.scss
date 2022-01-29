@@ -58,5 +58,25 @@
         padding: 8px 18px;
         min-width: 160px;
         max-width: 300px;
+        &-img{
+            position: relative;
+
+        }
+        .badge{
+            position: absolute;
+            top: -5px;
+            right: -6px;
+            width: 15px;
+            height: 15px;
+            display: flex;
+            padding: 2px 0 0 1px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 7.5px;
+            line-height: 160%;
+            color: #FFFFFF;
+        }
     }
 }
