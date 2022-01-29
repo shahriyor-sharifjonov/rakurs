@@ -23,7 +23,7 @@ $sizes: (1320:$xxl,
   }
 }
 
-@for $i from 1 through 30 {
+@for $i from 1 through 40 {
   .brad-#{$i} {
     border-radius: #{$i}px;
   }

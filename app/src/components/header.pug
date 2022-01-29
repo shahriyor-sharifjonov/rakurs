@@ -1,5 +1,5 @@
 mixin header()
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light.mb-4
+    header.navbar.navbar-expand-lg.navbar-light.bg-light
         .container
             a(href='#').navbar-brand.header__logo
                 img(src="images/logo.png", alt="logo" draggalbe="false")
@@ -18,13 +18,27 @@ mixin header()
                 a(href="#!").header__auth.d-flex.text-secondary.fw-600
                     img(src="images/profile.svg", alt="" draggable="false").mr-2
                     | Войти
-                a(href="#!").header__card.d-flex.align-items-center.border-primary.brad-10.mb-lg-0.mb-5 
+                a(href="#!").header__card.border-primary.bg-white.brad-10.mb-lg-0.mb-5 
                     .header__card-img.mr-3
                         img(src="images/card.svg", alt="")
                         .badge.badge-danger 10
                     .header__card-content.d-flex.flex-column
                         small.fw-300.text-secondary Корзина 
                         p.fw-600.text-secondary 1 032 ₽
+    .header-bot 
+        .header-bot__body.container
+            .header-bot__btn 
+                img(src="images/category.svg", alt="")
+                | Категории
+            button.header-bot__search-btn_2 
+                img(src="images/search.svg", alt="" draggable="false")
+            form(action="#!").header-bot__search
+                button(type='submit' title="search").header-bot__search-btn 
+                    img(src="images/search.svg", alt="" draggable="false")
+                input(type="search" placeholder="Поиск").header-bot__search-input
+
+
+
 
 
 
