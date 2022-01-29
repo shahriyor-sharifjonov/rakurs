@@ -1,0 +1,37 @@
+.slider{
+    &__content{
+        padding-bottom: 26px;
+    }
+    .swiper{
+        &-pagination{
+            height: 12px;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media(576){
+                height: 10px;
+            }
+            &-bullet{
+                background: #F2F2F2;
+                border-radius: 40px;
+                opacity: 1;
+                width: 32px;
+                height: 12px;
+                border-radius: 40px;
+                transition: 200ms ease-out;
+                @include media(576){
+                    height: 10px;
+                    width: 28px;
+                }
+                &-active{
+                    width: 88px;
+                    background: #FC5C12;
+                    @include media(576){
+                        width: 70px;
+                    }
+                }
+            }
+        }
+    }
+}

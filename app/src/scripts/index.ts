@@ -8,8 +8,10 @@ window.addEventListener('click', (e) => {
         search.classList.remove('active');
     }
 })
-
-
-// if (menuOpened && !e.composedPath().includes(headerButton) && !e.composedPath().includes(headerMenu)){
-//     menuToggle();
-// }
+var swiper = new Swiper(".slider__content     ", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });

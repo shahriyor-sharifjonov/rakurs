@@ -97,7 +97,7 @@
             font-size: 16px;
             line-height: 160%;
             text-decoration-line: underline;
-            color: #4F4F4F;            
+            color: #4F4F4F !important;            
             img{
                 margin-right: 16px;
             }
@@ -137,8 +137,10 @@
             &-input{
                 font-size: 12px;
                 line-height: 160%;
-                color: #BDBDBD;
                 flex: 1 1 auto;
+                &::placeholder{
+                    color: #BDBDBD;
+                }
             }
         }
     }
