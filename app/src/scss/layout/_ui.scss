@@ -8,6 +8,20 @@
   &:focus,&:active{
     outline: none;
   }
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #FC5C12;
+    border: 1px solid #fff;
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #FC5C12;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
 }
 button{
   font-family: inherit;
