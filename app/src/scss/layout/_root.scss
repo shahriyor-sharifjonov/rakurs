@@ -23,6 +23,15 @@ $sizes: (1320:$xxl,
   }
 }
 
+@for $i from 1 through 30 {
+  .brad-#{$i} {
+    border-radius: #{$i}px;
+  }
+  .brad-50{
+    border-radius: 50%;
+  }
+}
+
 @each $container-size,
 $break-point in $sizes {
   @if $container-size==0 {

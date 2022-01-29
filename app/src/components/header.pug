@@ -1,3 +1,28 @@
 mixin header()
-  header.header 
-    p header
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.mb-4
+        .container
+            a(href='#').navbar-brand.header__logo
+                img(src="images/logo.png", alt="logo" draggalbe="false")
+                p Еда для тех кто себя любит
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse.justify-content-between
+                .header__tel.d-flex.pt-lg-0.pt-4  
+                    img(src="images/tel.svg", alt="" class="mr-3")
+                    .header__tel-list 
+                        small.d-flex Время работы <br>с 10:00 до 22:00
+                        a(href="tel:+79780609222") +7 978 060 9 222
+                .header__delivery.bg-primary.brad-10.d-flex.flex-column.align-items-center
+                    p.text-white Бесплатная доставка 
+                    b.text-white от 390 ₽
+                a(href="#!").header__auth.d-flex.text-secondary.fw-600
+                    img(src="images/profile.svg", alt="" draggable="false").mr-2
+                    | Войти
+                a(href="#!").header__card.d-flex.align-items-center.border-primary.brad-10.mb-lg-0.mb-5 
+                    img(src="images/card.svg", alt="").mr-3
+                    .header__card-content.d-flex.flex-column
+                        small.fw-300.text-secondary Корзина 
+                        p.fw-600.text-secondary 1 032 ₽
+
+
+
